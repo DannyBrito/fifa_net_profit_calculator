@@ -12,6 +12,7 @@ const Main = () =>{
     useEffect(()=>{
         let taxTotal = sellPrice * eaTax
         let newProfit = sellPrice - taxTotal - buyPrice
+        newProfit = Math.floor(newProfit)
         let color = ( newProfit> 0)? 'gain' : 'loss'
         setProfit({ color, amount:newProfit})
 
