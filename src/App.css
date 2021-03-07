@@ -15,7 +15,6 @@ body{
   
 }
 .Main{
-  position: fixed;
   height: 100%;
   width: 100%;
   display: flex;
@@ -56,12 +55,11 @@ body{
   order: 2;
   justify-content: space-evenly;
   align-items: stretch;
+  font-size: 22px;
+  color: rgba(255,255,255,0.8);
 }
 
 @media only screen and (max-width: 700px) {
-  body {
-    /* background-color: red; */
-  }
   .prices_card_container{
     display: flex;
     flex-direction: column;
